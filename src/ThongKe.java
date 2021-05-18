@@ -111,7 +111,7 @@ public class ThongKe extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
@@ -124,7 +124,7 @@ public class ThongKe extends javax.swing.JFrame {
         table = new javax.swing.JTable();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jButton1 = new javax.swing.JButton();
+        btn_cancel = new javax.swing.JButton();
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +133,7 @@ public class ThongKe extends javax.swing.JFrame {
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 204, 153));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("Thống Kê");
@@ -178,10 +179,10 @@ public class ThongKe extends javax.swing.JFrame {
 
         jDateChooser2.setDateFormatString("yyyy-MM-dd");
 
-        jButton1.setText("Cancel");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_cancel.setText("Cancel");
+        btn_cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_cancelActionPerformed(evt);
             }
         });
 
@@ -202,7 +203,7 @@ public class ThongKe extends javax.swing.JFrame {
                                 .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(99, 99, 99)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(btn_cancel)
                             .addComponent(btn_Thongke)
                             .addComponent(btn_Tinhtien)))
                     .addGroup(layout.createSequentialGroup()
@@ -233,7 +234,7 @@ public class ThongKe extends javax.swing.JFrame {
                         .addComponent(btn_Tinhtien)
                         .addGap(3, 3, 3)))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(btn_cancel)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -245,13 +246,13 @@ public class ThongKe extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }                                           
 
-    private void btn_ThongkeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ThongkeActionPerformed
+    private void btn_ThongkeActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
         ticketList.clear();
         Connection con = null;
@@ -307,9 +308,9 @@ public class ThongKe extends javax.swing.JFrame {
             }
             showdata();
         }
-    }//GEN-LAST:event_btn_ThongkeActionPerformed
+    }                                           
 
-    private void btn_TinhtienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TinhtienActionPerformed
+    private void btn_TinhtienActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
         ticketList.clear();
         Connection con = null;
@@ -365,7 +366,7 @@ public class ThongKe extends javax.swing.JFrame {
             Tinhtien();
         }
 
-    }//GEN-LAST:event_btn_TinhtienActionPerformed
+    }                                            
 
     public double Tinhtien() {
         double n = 0;
@@ -380,10 +381,10 @@ public class ThongKe extends javax.swing.JFrame {
     }
 
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_cancelActionPerformed(java.awt.event.ActionEvent evt) {                                           
         new Quanlyve().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                          
 
     /**
      * @param args the command line arguments
@@ -420,10 +421,10 @@ public class ThongKe extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton btn_Thongke;
     private javax.swing.JButton btn_Tinhtien;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_cancel;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
@@ -432,5 +433,5 @@ public class ThongKe extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTable table;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }

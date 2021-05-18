@@ -12,7 +12,7 @@ import java.util.Date;
  * @author Admin
  */
 public class Ticket {
-    int id;
+    private int id;
     private String type;
     private String landPlace;
     private String flyPlace;
